@@ -19,10 +19,10 @@ Write-Host "     This takes 30 Seconds`n`n`n"-ForegroundColor yellow
 
 $processNames = @(
     "action", "amdrsserv", "apowersoftfreescreenrecorder", "bandicamlauncher", "bdcam", 
-    "camtasia", "captura", "d3dgear", "dxtory", "fraps", "gadwinprintscreen", 
+    "camtasia", "captura", "d3dgear", "dxtory", "fraps", "gadwinprintscreen", "geforce"
     "gtk-recordmydesktop", "icecreamscreenrecorder", "jupyter-notebook", "kazam", 
     "lightstream", "loiloilgamerecorder", "mirillis", "movavi.screen.recorder", 
-    "nchexpressions", "nvsphelper64", "obs64", "openbroadcastsoftware", "playclaw", 
+    "nchexpressions", "nvsphelper64", "obs", "obs64", "openbroadcastsoftware", "playclaw", 
     "pycharm64", "recordmydesktop", "screenkey", "screenstudio", "simple.screen.recorder", 
     "smartpixel", "screencast", "streamlabs", "vokoscreenNG", "webrtcvad", "wmcap", "xsplit"
 )
