@@ -1,5 +1,6 @@
 # Recording and VPN Check Powershell Script
 Checks the Systems Processes to determine if any Recordings happen or VPN is used to check for possible Ban-Evading.
+Original List by User ChildRevenge, updated for 2024.
 
 ### Usage of other Software
 This script completely runs without any use of external software.
