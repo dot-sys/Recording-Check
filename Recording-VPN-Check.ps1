@@ -68,7 +68,7 @@ $processMap = @{
 }
 
 $vpnNames = @(
-    "pia-client", "ProtonVPNService", "IpVanish", "WindScribe", "ExpressVPN", "NordVPN", "CyberGhost", "pia-tray", "SurfShark", "VyprVPN", "HSSCP", "TunnelBear", "ProtonVPN"
+    "CyberGhost", "ExpressVPN", "HSSCP", "IpVanish", "NordVPN", "ProtonVPN", "ProtonVPNService", "pia-client", "pia-tray", "SurfShark", "TunnelBear", "VyprVPN", "WindScribe"
 )
 
 $interval = 1
