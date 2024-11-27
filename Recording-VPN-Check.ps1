@@ -102,6 +102,11 @@ $moduleNames = @(
     "vce_hw_encode.dll", "libx264.dll", "avcodec-58.dll", "avformat-58.dll"
 )
 
+$streamingPrograms = @(
+    "Google Chrome", "Apple Safari", "Microsoft Edge", "Mozilla Firefox", 
+    "Internet Explorer", "Opera", "Brave", "Vivaldi", "DuckDuckGo Browser" 
+)
+
 $streamingDLLs = @(
     "webrtc.dll", "rtmp.dll", "dxgi.dll", "opengl32.dll", "vulkan-1.dll", 
     "gdi32.dll", "windows.ui.dll", "windows.graphics.capture.dll", "libcef.dll", "v8.dll"
@@ -132,8 +137,8 @@ $runningPrograms += $loadedDLLs
 $runningPrograms = $runningprograms | Select-Object -Unique
 
 $runningStreams = $runningProcesses | Where-Object {
-    ($streamingDLLs -contains $_.ModuleName) -and
-    ($processNames -contains $_.ProcessName)
+    ($_.ProcessName -match "DiscordCanary" -or $_.ProcessName -match "DiscordPTB") -or
+    (($streamingDLLs -contains $_.ModuleName) -and ($streamingPrograms -contains $_.ProcessName))
 } | Select-Object -ExpandProperty ProcessName -Unique
 
 $installedPrograms = @()
