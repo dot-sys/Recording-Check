@@ -6,4 +6,4 @@ Original List by User ChildRevenge, updated for 2024.
 This script completely runs without any use of external software.
 
 ### Invoke Script
-New-Item -Path "C:\Temp" -ItemType Directory -Force | Out-Null; Set-Location "C:\Temp"; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dot-sys/Recording-Check/master/Recording-VPN-Check.ps1" -OutFile "rec_vpn_check.ps1"; Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force; Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force; .\rec_vpn_check.ps1
+New-Item -Path "C:\Temp" -ItemType Directory -Force | Out-Null; Set-Location "C:\Temp"; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dot-sys/Recording-Check/master/Recording-Check.ps1" -OutFile "rec_vpn_check.ps1"; Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force; Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force; .\rec_vpn_check.ps1
